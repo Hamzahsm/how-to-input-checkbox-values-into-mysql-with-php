@@ -13,7 +13,13 @@ if(isset($_POST['submit'])){
   
   //query start here 
   $query = "INSERT INTO yourtabledatabase (fruits) VALUES ('$fruits')";
-  $mysqli_run = myssqli_query($conn, $query);
+  $query_run = myssqli_query($conn, $query);
+  
+  if($query_run){
+    header "Location : index.php";
+  } else {
+    header "Location : index.php";
+  }
 
 }
 ?>
