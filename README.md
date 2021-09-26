@@ -1,0 +1,1 @@
+# how-to-input-checkbox-values-into-mysql-with-php
