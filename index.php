@@ -6,7 +6,7 @@ if(mysqli_connect_errno()){
   echo"Failed connect to mysql : ". mysqli_connect_error();
 }
 
-//if submit was clicked 
+//if submit button was clicked 
 if(isset($_POST['submit'])){
   //the values will separate with comma using  implode function 
   $fruits = implode(', ', $_POST['fruits'];
@@ -47,3 +47,4 @@ if(isset($_POST['submit'])){
     <button type="submit" name="submit" class="submit"> submit</button>
   </form>
 </body>
+</html>
