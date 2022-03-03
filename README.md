@@ -1,4 +1,1 @@
-Biasanya kan kita bikin form dengan value single, misal text atau number atau radio
-Waktu itu saya bingung, pas waktu bikin checkbox, value yang diterima di mysql kok hanya satu padahal user memasukkan data lebih dari satu pilihan
-Oleh karena itu saya riset bagaiamana caranya saya bisa memasukkan value yang telah dipilih users ke dalam mysql dengan database 
-Cara-caranya ada di file di atas ya..
+Usually, we make a form with a single value, for example text or number or radio. At that time I was confused, when I made a checkbox, the value received in mysql was only one, even though the user entered more than one choice. Therefore, I researched how I could do it. enter the value that has been selected by users into mysql with the database. Finally i can do it with this way..
