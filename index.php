@@ -1,6 +1,6 @@
 <?php 
 //connecting to your database
-$conn = mysqli_connect('localhost', 'username', 'password', 'dbname');
+$conn = mysqli_connect('localhost', 'root', '', 'ytb');
 //checking if connection fail
 if(mysqli_connect_errno()){
   echo"Failed connect to mysql : ". mysqli_connect_error();
@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
   $fruits = implode(', ', $_POST['fruits']);
   
   //query start here 
-  $query = "INSERT INTO yourtabledatabase (fruits) VALUES ('$fruits')";
+  $query = "INSERT INTO checkbox_values (fruits) VALUES ('$fruits')";
   $query_run = mysqli_query($conn, $query);
   
   if($query_run){
