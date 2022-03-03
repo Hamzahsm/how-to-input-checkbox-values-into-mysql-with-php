@@ -1,6 +1,6 @@
 <?php 
 //connecting to your database
-$conn = mysqli_connect('localhost', 'username', 'password', 'dbname);
+$conn = mysqli_connect('localhost', 'username', 'password', 'dbname');
 //checking if connection fail
 if(mysqli_connect_errno()){
   echo"Failed connect to mysql : ". mysqli_connect_error();
@@ -9,16 +9,16 @@ if(mysqli_connect_errno()){
 //if submit button was clicked 
 if(isset($_POST['submit'])){
   //the values will separate with comma using  implode function 
-  $fruits = implode(', ', $_POST['fruits'];
+  $fruits = implode(', ', $_POST['fruits']);
   
   //query start here 
   $query = "INSERT INTO yourtabledatabase (fruits) VALUES ('$fruits')";
-  $query_run = myssqli_query($conn, $query);
+  $query_run = mysqli_query($conn, $query);
   
   if($query_run){
-    header "Location : index.php";
+    echo"<script>alert('success insert into database');</script>";
   } else {
-    header "Location : index.php";
+    echo"<script>alert('Oops, failed insert into database');</script>";
   }
 
 }
