@@ -28,15 +28,7 @@ if(isset($_POST['submit'])){
 <html>
 <head>
   <title>Tutorial How To Input Checkbox Values Into Mysql</title>
-  <style>
-    .submit {
-      padding: 10px;
-      border: none;
-      background-color: blue;
-      color: white;
-      box-shadow:5px 5px 5px silver;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <form action="index.php" method="POST">
